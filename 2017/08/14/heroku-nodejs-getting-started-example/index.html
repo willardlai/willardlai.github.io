@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Node.js,Express,Heroku," />
 
 
 
@@ -93,13 +93,24 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Will&#39;s Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="一、準備工作 先到 Heroku 註冊帳號 下載與安裝 heroku-cli  二、建立 Node.js 應用程式建立一個專案，並安裝 Express1234$ mkdir heroku-nodejs-getting-started-example$ cd heroku-nodejs-getting-started-example$ npm init$ npm install --save exp">
+<meta name="keywords" content="Node.js,Express,Heroku">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何將 Node.js App 佈署到 Heroku">
+<meta property="og:url" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/index.html">
 <meta property="og:site_name" content="Will&#39;s Notes">
+<meta property="og:description" content="一、準備工作 先到 Heroku 註冊帳號 下載與安裝 heroku-cli  二、建立 Node.js 應用程式建立一個專案，並安裝 Express1234$ mkdir heroku-nodejs-getting-started-example$ cd heroku-nodejs-getting-started-example$ npm init$ npm install --save exp">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-create-1.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-deploy-1.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-deploy-2.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-deploy-3.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-update-1.png">
+<meta property="og:updated_time" content="2017-08-14T08:20:13.298Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Will&#39;s Notes">
+<meta name="twitter:title" content="如何將 Node.js App 佈署到 Heroku">
+<meta name="twitter:description" content="一、準備工作 先到 Heroku 註冊帳號 下載與安裝 heroku-cli  二、建立 Node.js 應用程式建立一個專案，並安裝 Express1234$ mkdir heroku-nodejs-getting-started-example$ cd heroku-nodejs-getting-started-example$ npm init$ npm install --save exp">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/heroku-create-1.png">
 
 
 
@@ -127,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/14/heroku-nodejs-getting-started-example/"/>
 
 
 
 
 
-  <title>Will's Notes</title>
+  <title>如何將 Node.js App 佈署到 Heroku | Will's Notes</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -159,9 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -254,9 +263,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -282,9 +291,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/14/heroku-nodejs-getting-started-example/" itemprop="url">如何將 Node.js App 佈署到 Heroku</a></h1>
+          <h1 class="post-title" itemprop="name headline">如何將 Node.js App 佈署到 Heroku</h1>
         
 
         <div class="post-meta">
@@ -353,9 +360,7 @@
       
 
       
-        
-          
-            <h3 id="一、準備工作"><a href="#一、準備工作" class="headerlink" title="一、準備工作"></a>一、準備工作</h3><ol>
+        <h3 id="一、準備工作"><a href="#一、準備工作" class="headerlink" title="一、準備工作"></a>一、準備工作</h3><ol>
 <li>先到 <a href="https://www.heroku.com/" target="_blank" rel="external">Heroku</a> 註冊帳號</li>
 <li>下載與安裝 <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install" target="_blank" rel="external">heroku-cli</a></li>
 </ol>
@@ -399,207 +404,76 @@
 <p>最後重新連結網址</p>
 <p><img src="/2017/08/14/heroku-nodejs-getting-started-example/heroku-update-1.png" alt=""></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/cordova-hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Willard Lai">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/cordova-hello-world/" itemprop="url">cordova-hello-world</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-              <time title="創建於" itemprop="dateCreated datePublished" datetime="2017-06-13T10:19:01+08:00">
-                2017-06-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Cordova/" itemprop="url" rel="index">
-                    <span itemprop="name">Cordova</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Node-js/" rel="tag"># Node.js</a>
           
-
+            <a href="/tags/Express/" rel="tag"># Express</a>
           
-            
+            <a href="/tags/Heroku/" rel="tag"># Heroku</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="如何使用Cordova開發跨平台的APP"><a href="#如何使用Cordova開發跨平台的APP" class="headerlink" title="如何使用Cordova開發跨平台的APP"></a>如何使用Cordova開發跨平台的APP</h1><p>Cordova是一套可讓你以HTML、CSS、JS來開發手機APP的Framework，並且只需要一套代碼即可編譯成不同平台的App。</p>
-<blockquote>
-<p>此篇文章的Cordova本版為7.0.1</p>
-</blockquote>
-<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><p>開始前需要先安裝<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>，若已安裝可忽略。</p>
-<p>安裝Cordova</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g cordova</div></pre></td></tr></table></figure>
-<h2 id="建立專案"><a href="#建立專案" class="headerlink" title="建立專案"></a>建立專案</h2><p>先到你想要的路徑中，並輸入以下指令建立專案</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova create hello com.example.hello HelloWorld</div></pre></td></tr></table></figure>
-<blockquote>
-<p>資料夾名稱： hello<br>Package Name： com.example.hello<br>專案名稱： HelloWorld</p>
-</blockquote>
-<p>完成後切換至資料夾路徑</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> hello</div></pre></td></tr></table></figure>
-<p>剛新建完的資料夾結構會長這樣</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">hello</div><div class="line"> |- hooks</div><div class="line"> |- platforms (編譯成各平台的專案檔會放在這，如IOS、Android...等)</div><div class="line"> |- plugins (Cordova安裝後的外掛會放在這)</div><div class="line"> |- res (存放App icon...等，這些資源檔)</div><div class="line"> |- www (APP主要內容放置的地方，也是我們主要開發的位置，如js、css、html)</div><div class="line"> |- .npmignore</div><div class="line"> |- config.xml (Cordova的全域設定檔)</div><div class="line"> |- package.json</div></pre></td></tr></table></figure>
-<h2 id="建立平台"><a href="#建立平台" class="headerlink" title="建立平台"></a>建立平台</h2><p>Cordova可以讓你以一套檔案編譯成多種平台，如IOS、Android、WP…等，以下將以IOS為範例。</p>
-<h3 id="IOS"><a href="#IOS" class="headerlink" title="IOS"></a>IOS</h3><p>開始前請先確定你的MAC已經安裝好XCode，若還沒可參考<a href="https://itisjoe.gitbooks.io/swiftgo/content/more/xcode_install.html" target="_blank" rel="external">這裡</a>。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova platform add ios</div></pre></td></tr></table></figure>
-<p>完成後你會看到在 ./platforms 裡面會多了個 ios 資料夾。</p>
-<h2 id="編譯"><a href="#編譯" class="headerlink" title="編譯"></a>編譯</h2><p>每當你修改專案後，你需要重新編譯一次，且在編譯前必須先建立平台，每次編譯完會自動修改 <figure class="highlight plain"><figcaption><span>中的檔案。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">你可以選擇一次編譯所有目前已加入的平台</div><div class="line"></div><div class="line">```sh</div><div class="line">$ cordova build</div></pre></td></tr></table></figure></p>
-<p>或是選擇單一平台，例如IOS：</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ cordova build ios</div></pre></td></tr></table></figure>
-<h2 id="在模擬器或裝置中執行"><a href="#在模擬器或裝置中執行" class="headerlink" title="在模擬器或裝置中執行"></a>在模擬器或裝置中執行</h2><p>編譯好應用程式後，我們就可以將其佈署到裝置或是模擬器上了。</p>
-<h3 id="IOS-1"><a href="#IOS-1" class="headerlink" title="IOS"></a>IOS</h3><p>在XCode中打開 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">或是使用指令打開</div><div class="line">```sh</div><div class="line">$ open ./platforms/ios/HelloWorld.xcworkspace/</div><div class="line">or</div><div class="line">$ open -a Xcode platforms/ios</div></pre></td></tr></table></figure></p>
-<p>接著就跟一般IOS專案一樣，可以將其在模擬器或裝置上執行了，如圖：</p>
-<p><img src="/2017/06/13/cordova-hello-world/ios-run.png" alt=""></p>
-<blockquote>
-<p>P.S. 你不需要從XCode中修改檔案，也不需要在編譯後重啟XCode，每當你修改專案並編譯後，XCode會自動抓新的檔。</p>
-</blockquote>
-<p>接著APP就能成功運行了</p>
-<p><img src="/2017/06/13/cordova-hello-world/ios-run-success.png" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/06/13/cordova-hello-world/" rel="next" title="cordova-hello-world">
+                <i class="fa fa-chevron-left"></i> cordova-hello-world
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -607,6 +481,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -626,8 +504,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            本站概覽
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -689,6 +576,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、準備工作"><span class="nav-number">1.</span> <span class="nav-text">一、準備工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、建立-Node-js-應用程式"><span class="nav-number">2.</span> <span class="nav-text">二、建立 Node.js 應用程式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#建立一個專案，並安裝-Express"><span class="nav-number">2.1.</span> <span class="nav-text">建立一個專案，並安裝 Express</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#建立-index-js"><span class="nav-number">2.2.</span> <span class="nav-text">建立 index.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改-package-json-檔案"><span class="nav-number">2.3.</span> <span class="nav-text">修改 package.json 檔案</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化-Git"><span class="nav-number">2.4.</span> <span class="nav-text">初始化 Git</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、第一次-Heroku-佈署"><span class="nav-number">3.</span> <span class="nav-text">三、第一次 Heroku 佈署</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#登入-heroku"><span class="nav-number">3.1.</span> <span class="nav-text">登入 heroku</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在-Heroku-上建立應用程式"><span class="nav-number">3.2.</span> <span class="nav-text">在 Heroku 上建立應用程式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#將-Node-js-App-佈署到-Heroku-上"><span class="nav-number">3.3.</span> <span class="nav-text">將 Node.js App 佈署到 Heroku 上</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、更新與重新佈署"><span class="nav-number">4.</span> <span class="nav-text">四、更新與重新佈署</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -802,10 +705,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
